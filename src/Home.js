@@ -34,7 +34,7 @@ class Home extends React.Component {
                 render:()=>{
                     return (
                         <Image
-                            src="images/online_education_17.png"
+                            src="Images/online_education_17.png"
                         />
                     )
                 }
@@ -43,7 +43,7 @@ class Home extends React.Component {
                 render:()=>{
                     return (
                         <Image
-                            src="images/online_education_03.png"
+                            src="Images/online_education_03.png"
                         />
                     )
                 }
@@ -52,7 +52,7 @@ class Home extends React.Component {
                 render:()=>{
                     return (
                         <Image
-                            src="images/online_education_01.png"
+                            src="Images/online_education_01.png"
                         />
                     )
                 }
@@ -61,7 +61,7 @@ class Home extends React.Component {
                 render:()=>{
                     return (
                         <Image
-                            src="images/online_education_05.png"
+                            src="Images/online_education_05.png"
                         />
                     )
                 }
