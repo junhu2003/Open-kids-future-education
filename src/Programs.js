@@ -9,8 +9,9 @@ class Programs extends React.Component {
         const SegmentStyle = {
             backgroundImage: `url('./Images/online_education_13.png')`,
             backgroundPosition: 'center',
+            backgroundRepeat: 'repeat-y',
             width: "100%",
-            height: "600px",
+            minHeight: '600px',
             color: 'blue',            
           };
 

@@ -9,8 +9,9 @@ class OurTeam extends React.Component {
         const SegmentStyle = {
             backgroundImage: `url('./Images/online_education_14.png')`,
             backgroundPosition: 'center',
+            backgroundRepeat: 'repeat-y',
             width: "100%",
-            height: "600px"
+            minHeight: '600px'
           };
 
         return (
@@ -29,18 +30,21 @@ class OurTeam extends React.Component {
                                 <Item.Meta>CEO &amp; Tutor</Item.Meta>
                                 <Divider />
                                 <Item.Description style={{ textAlign:'justify', fontSize: 16 }}>                                  
-                                    Graduated from Dalian University of Technology, Master's degree in computer science. 
-                                    Six years of University teaching experience in China. 25 years of IT industry experience. 
-                                    Including Industrial and Commercial Bank of China (ICBC), 
-                                    Core data Ltd, Masterworks Software Ltd, City of Calgary, ResMor trust company, Ciber (US),
-                                    Atco, Shaw Communication, Bow Valley College, etc.                                       
+                                    Graduated from Dalian University of Technology, with a Master's degree in computer science 
+                                    With six years of University teaching experience in China. 
+                                    Has 25 years total of IT industry experience with 17 years of IT experience in Canada. 
+                                    Worked for Industrial and Commercial Bank of China (ICBC), 
+                                    Core data Ltd, Masterworks Software Ltd, ITS of City of Calgary, ResMor trust company, Ciber (US),
+                                    Atco, Shaw Communication, Bow Valley College, etc, and has been involved in some critical enterprise level
+                                    projects such as the City of Calgary Helpdesk portal project, the City of Calgary Property Tax project, etc.
                                 </Item.Description>
                                 <Item.Description style={{ textAlign:'justify', fontSize: 16 }}>
-                                    毕业于大连理工大学，计算机科学硕士学位。
-                                    六年中国大学教学经验。 25 年 IT 行业经验。
-                                    曾就职于中国工商银行（ICBC），
-                                    Core data Ltd、Masterworks Software Ltd、卡尔加里市市政府IT部、ResMor 信托公司、Ciber（美国）、
-                                    Atco、Shaw Communication、Bow Valley College 等。
+                                    毕业于大连理工大学，获得计算机科学硕士学位。
+                                    拥有六年中国大学教学经验。总共 25 年的 IT 从业经验，其中 17 年在加拿大从事计算机软件开发工作。
+                                    曾就职于中国工商银行（ICBC）IT 部，
+                                    Core data Ltd、Masterworks Software Ltd、卡尔加里市政府IT部、ResMor 信托公司、Ciber（美国）、
+                                    Atco、Shaw Communication、Bow Valley College等，曾参与开发一些重要的企业级软件项目，其中包括
+                                    卡尔加里市政府 Helpdesk 项目、卡尔加里地税项目等。
                                 </Item.Description>
                             </Item.Content>
                         </Item>    

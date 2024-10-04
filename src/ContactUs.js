@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Header, Image, Grid, Segment, Button, Form, Message, Icon } from 'semantic-ui-react';
-import emailjs, { init } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import MenuBar from "./MenuBar";
 
@@ -16,7 +16,23 @@ class ContactUs extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
 
-        init("user_2HSWkKagF2I2NGNAiTUSW");
+        emailjs.init({
+            publicKey: '7MQgRTdKAR8bn4Z8X',
+            // Do not allow headless browsers
+            blockHeadless: false,
+            blockList: {
+              // Block the suspended emails
+              list: [],
+              // The variable contains the email address
+              watchVariable: 'userEmail',
+            },
+            limitRate: {
+              // Set the limit rate for the application
+              id: 'app',
+              // Allow 1 request per 10s
+              throttle: 10000,
+            },
+          });
 
         const { name, phone, email, message } = this.state;
         
@@ -28,14 +44,15 @@ class ContactUs extends React.Component {
           message: message,
         };
 
-        emailjs.send(
-          'service_iudfw1j',
-          'template_atkizcx',
-           templateParams,
-          'user_2HSWkKagF2I2NGNAiTUSW'
-        ).then((a) => {
-            this.setState({ hiddenMsg: false });
-          });
+        emailjs.send('service_mdq5pqp', 'template_pn1cspc', templateParams).then(
+            (response) => {
+              console.log('SUCCESS!', response.status, response.text);
+              this.setState({ hiddenMsg: false });
+            },
+            (error) => {
+              console.log('FAILED...', error);
+            },
+          );        
 
         this.resetForm();
     };
@@ -60,8 +77,9 @@ class ContactUs extends React.Component {
         const SegmentStyle = {
             backgroundImage: `url('./Images/online_education_11.png')`,
             backgroundPosition: 'center',
+            backgroundRepeat: 'repeat-y',
             width: "100%",
-            height: "600px",
+            minHeight: '600px',
             color: 'blue',            
           };
 
@@ -80,12 +98,12 @@ class ContactUs extends React.Component {
                             <Message
                                 icon='inbox'
                                 header='Email:'
-                                content='junhu2003@hotmail.com'
+                                content='junhu2003 @hotmail.com'
                             />
                             <Message
                                 icon='phone'
                                 header='Telephone:'
-                                content='403-681-9518'
+                                content='236-509-8678'
                             />
                             <Message icon>
                                 <Icon name='chat' />

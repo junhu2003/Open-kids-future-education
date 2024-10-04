@@ -9,8 +9,9 @@ class AboutUs extends React.Component {
         const SegmentStyle = {
             backgroundImage: `url('./Images/online_education_02.png')`,
             backgroundPosition: 'center',
-            width: "100%",
-            height: "600px",
+            backgroundRepeat: 'no-repeat',
+            width: "100%",            
+            minHeight: '600px',
             color: 'blue',
             fontSize: 16
           };

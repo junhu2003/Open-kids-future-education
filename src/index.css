@@ -12,3 +12,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.imagebutton {
+  /*background-color: #ddf;
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid #333;*/
+  transition: 0.15s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.imagebutton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  top: 40px;
+  left: 10px;
+  width: 500px;
+  color: #000;
+  background-color: #F8F8F8;  
+  border: #000 1px solid;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  opacity: 0;    
+  transition: 750ms all;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {  
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+.imagemenu {  
+  transition: 0.15s;
+}
+
+.imagemenu:hover {
+  cursor: pointer;
+  transform: scale(1.20);  
+}

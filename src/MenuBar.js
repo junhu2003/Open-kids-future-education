@@ -24,6 +24,7 @@ class MenuBar extends React.Component {
           <Image
             size="small"       
             src="open_kids_future_logo.png"
+            className="imagemenu"
           />
         </Menu.Item>
     
@@ -39,9 +40,10 @@ class MenuBar extends React.Component {
               <div>
                 <Image
                   src="./Images/menu_home.png"
+                  className="imagemenu"
                 />
-              </div>
-              <div>
+              </div>              
+              <div style={{marginTop: 5}}>
                 <Icon name={'home'}/>
                 Home 
               </div>
@@ -59,9 +61,10 @@ class MenuBar extends React.Component {
               <div>
                 <Image
                   src="./Images/menu_AboutUs.png"
+                  className="imagemenu"
                 />
               </div>
-              <div>
+              <div style={{marginTop: 5}}>
                 <Icon name={'globe'}/>
                 About Us
               </div>
@@ -79,9 +82,10 @@ class MenuBar extends React.Component {
               <div>
                 <Image
                   src="./Images/menu_OurTeam.png"
+                  className="imagemenu"
                 />
               </div>
-              <div>
+              <div style={{marginTop: 5}}>
                 <Icon name={'chess'}/>
                 Our Team
               </div>
@@ -99,9 +103,10 @@ class MenuBar extends React.Component {
               <div>
                 <Image
                   src="./Images/menu_Programs.png"
+                  className="imagemenu"
                 />
               </div>
-              <div>
+              <div style={{marginTop: 5}}>
                 <Icon name={'chain'}/>
                 Programs
               </div>
@@ -119,9 +124,10 @@ class MenuBar extends React.Component {
               <div>
                 <Image
                   src="./Images/menu_ContactUs.png"
+                  className="imagemenu"
                 />
               </div>
-              <div>
+              <div style={{marginTop: 5}}>
                 <Icon name={'phone volume'}/>
                 Contact Us
               </div>
